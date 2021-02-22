@@ -1,7 +1,22 @@
 package simple_checkout.menu_items;
 
-public class CheckoutEraser {
+import java.sql.SQLException;
 
-	String label = "pénztár törlése";
+
+public class CheckoutEraser extends AbstractMenuPoint{
+
+	private static final String LABEL = "pénztár törlése";
+	
+	private static final String SQL_STATEMENTS = "" ;
+	
+	public CheckoutEraser() {
+		super(LABEL, SQL_STATEMENTS);
+	}
+
+	@Override
+	public void executeTask() throws SQLException {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

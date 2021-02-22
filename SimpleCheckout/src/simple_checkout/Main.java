@@ -32,7 +32,7 @@ public class Main {
 			"pénztár betöltése", // (aktuális: <pénztár neve (pénztár egyedi szám azonosítója)>)", //
 			"pénztár törlése", //
 			"bejegyzések kezelése", //
-			"kilépés",//
+			"kilépés"//
 
 	});
 

@@ -50,5 +50,21 @@ public abstract class AbstractMenuPoint implements MenuPoint {
 			pstmt.close();
 		}
 	}
+	// -----------------------------------------------------------	
+
+		String inputText(String prompt) {
+			System.out.print(prompt + ": ");
+			return scanner.nextLine();
+		}
+
+		int inputInt(String prompt) {
+			for (;;) {
+				try {
+					System.out.print(prompt + ": ");
+					return Integer.parseInt(scanner.nextLine());
+				} catch (NumberFormatException e) {
+				}
+			}
+		}
 
 }

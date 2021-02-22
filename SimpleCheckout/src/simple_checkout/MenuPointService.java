@@ -1,11 +1,9 @@
 package simple_checkout;
 
+public interface MenuPointService {
 
-public class MenuPointService {
+	MenuPoint[] getAvailableMenuPoint();
 
-	public MenuPoint[] getMenuActions(String[] strings) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	MenuPoint[] getMenuActions(String[] strings);
 
 }
