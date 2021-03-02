@@ -4,6 +4,6 @@ public interface MenuPointService {
 
 	MenuPoint[] getAvailableMenuPoint();
 
-	MenuPoint[] getMenuActions(String[] strings);
+	MenuPoint[] getMenuActions(String... strings);
 
 }

@@ -6,7 +6,8 @@ public class CheckoutLoader extends AbstractMenuPoint {
 
 	private static final String LABEL = "pénztár betöltése"; // (aktuális: <pénztár neve (pénztár egyedi szám azonosítója)>)
 
-	private static final String SQL_STATEMENTS = "";
+	private static final String SQL_STATEMENTS = "" + //
+			"SELECT * FROM checkout.checkouts;"; // TODO check sql statements parameter!!!
 
 	public CheckoutLoader() {
 		super(LABEL, SQL_STATEMENTS);

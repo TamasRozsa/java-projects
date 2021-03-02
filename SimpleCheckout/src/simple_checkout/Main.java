@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("hellooo");
 		try {
 			new Main().run();
 		} catch (SQLException e) {
@@ -31,12 +30,12 @@ public class Main {
 			"új pénztár felvétele", //
 			"pénztár betöltése", // (aktuális: <pénztár neve (pénztár egyedi szám azonosítója)>)", //
 			"pénztár törlése", //
-			"bejegyzések kezelése", //
-			"kilépés"//
+			"bejegyzések kezelése" //
 
 	});
 
 	private void run() throws Exception {
+		System.out.println("hellooo");
 		System.out.println("Üdvözöllek a pénztár programban.");
 		Scanner scanner = new Scanner(System.in);
 		try (Connection connection = DriverManager.getConnection(urlPrefix + schema + switches, user, password);
